@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sign-in-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+  }
+  
+  .sign-in-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .extra-options {
+    margin-top: 20px;
+  }
+  
+  .extra-options a {
+    text-decoration: none;
+    color: #e50a13;
+  }
+  
+  .extra-options a:hover {
+    text-decoration: underline;
+  }
+
+  body background{
+    width: 10vh;
+    height: 45vh;
+  }
+  
+  .nav img {
+    width: 148px;
+    height: 40px;
+    z-index: 2;
+}
+.nav {
+  height: 92px;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  z-index: 2;
+}
+
+body::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+  z-index: -1; 
+}

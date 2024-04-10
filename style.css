@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red !important; */
+}
+html{
+    
+    height: 100%;
+    width: 100%;
+}
+ body {
+    height: 100%;
+    width: 100%;
+}
+.main {
+    position: relative;
+    margin-left: 10vw;
+    margin-right: 15vw;
+    z-index: 100;
+}
+.nav {
+    height: 92px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+/* .nav-part2 {
+    display: flex;
+    gap: 400vw;
+} */
+.navbutton {
+    background-color: #e10715;
+    font-weight: bold;
+	color: white;
+	font-size: small;
+	width: 76.9px;
+	height: 32px;
+	border: none;
+    border-radius: 3px;
+	margin-left: 10px;
+}
+
+.navele1 {
+    width: 90px;
+	height: 32px;
+    font-weight: bold;
+    background-color: #0000;
+    color: white;
+	font-size: small;
+    border: 2px solid grey;
+    border-radius: 3px;
+    padding: 0 0.5vw;
+}
+
+.nav img {
+    width: 148px;
+    height: 40px;
+}
+.content-1{
+    display: flex; /* Use flexbox layout */
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    width: 100vw;
+    height: 60vh;
+}
+.descrip{
+    display: flex; /* Use flexbox layout */
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    width: 100vw;
+    height: 80vh;
+}
+
+.descrip1{
+    display: flex; /* Use flexbox layout */
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    width: 100vw;
+    height: 95vh;
+}
+
+.h-1{
+    justify-content: center; /* Center horizontally */
+    
+}
+/* .p-1{
+    justify-content: center; Center horizontally
+}
+.p-2{
+    justify-content: center; Center horizontally
+} */
+.hero-img1 img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 86vh;
+        z-index: -1; /* Ensure the image is behind other content */
+        /* box-sizing: border-box;
+        border-bottom: 10px solid grey; */
+     }
+
+     .border-line{
+        position: absolute;
+        border: 6px solid #232223; 
+        width: 174.8vh;
+        z-index: 101;
+        top: 85.9vh;
+     }
+
+     .border-line2{
+        position: absolute;
+        border: 6px solid #232223; 
+        width: 174.8vh;
+        z-index: 101;
+        top: 87vw;
+     }
+     .hero-img1::before {
+        content: ""; /* Create a pseudo-element for the overlay */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 40vh;
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Semi-transparent black gradient */
+        z-index: 1; /* Ensure the overlay appears above the image */
+    }
+    .hero-img1::after {
+        /* The gradient overlay */
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 8.6vh;
+        right: 0;
+        bottom: 4vh;
+        left: 0;
+        height: 77.3vh;
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8) , rgba(0,0,0,0));
+      }
+
+
+    .content-1 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-size: 48px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        
+    }
+
+    .descrip{
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        font-size: 24px;
+        margin: 16px 0px 0px;
+    }
+    .descrip1{
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        font-size: 20px;
+        margin: 16px 0px 0px;
+    }
+    .descrip1-1{
+        display: none;
+    }
+    .form2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 120vh;
+        position: relative;
+        right: 7.8vw;
+    }
+
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 17vh;
+        position: relative;
+       
+    }
+
+    .email {
+        width: 23.73vw;
+        height: 8.175vh;
+        background-color: rgba(0,0,0,0.6);
+        border: 1.5px solid grey;
+        border-radius: 4px;
+        z-index: 5;
+    
+    }
+
+    input[type=email] {
+        color: white; /* Entered text color */
+        font-size: 15px;
+        padding: 0 15px 0 15px;
+    }
+    ::placeholder {
+        color: white; /* Change this to the desired color */
+        z-index: 5;
+        padding: 24px 16px 8px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .gobtn{
+        position: absolute;
+        width: 15.317vw;
+        height: 8.175vh;
+        background-color: #e51a12;
+        color: white;
+        z-index: 5;
+        margin-left: 0.5vw;
+        font-size: 2.0497vw;
+        font-weight: 800;
+        border-radius: 4px;
+        border: #e51a12;
+        bottom: 72.9vh;
+        right: 27.5vw;
+    }
+
+    .back2{
+    background-color: black;
+    display: flex;
+    height: 37.985vw;
+    position: absolute;
+    top: 49.6vw;
+    width: 100vw;
+    }
+
+    .back3{
+    background-color: black;
+    display: flex;
+    height: 37.985vw;
+    position: absolute;
+    top: 87.8vw;
+    width: 100vw;
+    }
+
+    .back2inside{
+        /* outline: 1px solid red; */
+        display: flex;
+        width: 77vw;
+        position: absolute;
+        height: 49.3255vh;
+         height: 49.3255vh;
+         top: 9vh;
+         margin-left:  20.154vh;
+         margin-right: 20.154vh;
+    }
+    .back3inside{
+        /* outline: 1px solid red; */
+        display: flex;
+        width: 73vw;
+        position: absolute;
+        height: 49vh;
+         top: 9vh;
+         margin-left:  23.154vh;
+         margin-right: 20.154vh;
+    }
+
+
+    .back2deskcrip h2 {
+        font-size: 48px;
+        position: absolute;
+        top: 140px;
+    }
+    .back3deskcrip h2{
+        font-size: 48px;
+        position: absolute;
+        top: 40px;
+        line-height: 1.5; /* Adjust this value to increase or decrease line spacing */
+    }
+
+    .back2deskcrip p {
+        font-size: 24px;
+        position: absolute;
+        top: 220px;
+    }
+    .back3deskcrip p {
+        font-size: 24px;
+        position: absolute;
+        top: 220px;
+    }
+
+
+    .back2deskcrip{
+        /* display: flex; */
+        /* align-items: center;
+        justify-content: center; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 49.3255vh;
+    }
+
+    .back3deskcrip{
+        /* outline: 1px solid greenyellow !important;  */
+        width: 36.2vw;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .back2inside img{
+        position: absolute;
+        width: 38vw;
+        left: 43vw;
+    }
+
+@media (max-width: 600px) {
+    .nav img {
+        width: 100px;
+        height: 30px;
+    }
+
+    .main {
+       margin-left: 2.5vw; 
+       margin-right: 8vw;
+    }
+
+    .navele1{
+        padding: 0 1vw;
+    }
+
+    .hero-img1 img{
+        position: absolute;
+        width: 100vw;
+        margin-left: 0%; 
+        height: 120vw; 
+        object-fit: cover;
+    }
+    .content-1{
+        font-size: 32px;
+        height: 20vh;     
+    }
+
+    .h-1{
+        text-align: center;
+    }
+
+    .hero-img1::before{
+        position: absolute;
+        height: 30vh;
+    }
+    
+    .hero-img1::after{
+        position: absolute;
+        height: 103vw;
+        top: 7.8vh;
+    }
+
+    .descrip{
+        font-size: 18px;
+        height: 33vh;
+    }
+
+    .descrip1{
+        display: none;
+    }
+    .descrip1-1{
+        font-size: 18px;
+        height: 40vh;
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        font-size: 18px;
+        margin: 1vh 3.64vh 0px;
+        align-items: center;
+        justify-content: center; 
+        width: 90vw;
+        height: 45vh;
+    }
+
+    .descrip1-1 p{
+        margin-top: 1vh;
+
+    }
+
+    .email{
+        width: 65.27vw;
+        height: 5vh;
+    }
+ 
+    .form2 {
+        height: 68vh;
+        right: 0;
+    }
+      
+  .btn{
+    padding-bottom: 47.8vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .gobtn{
+    width: 35vw;
+    height: 10vw;
+    font-size: 4vw;
+  }
+.border-line{
+    position: absolute;
+    width: 97.1vw;
+    z-index: 101;
+    top: 55.4vh;
+    
+}
+
+.border-line2{
+    position: absolute;
+    width: 97.1vw;
+    z-index: 101;
+    top: 136.4vh;
+}
+
+.back2{
+    background-color: black;
+    display: flex;
+    height: 80vh;
+    position: absolute;
+    top: 56.7vh;
+    width: 100vw;
+    }
+.back3{
+    background-color: black;
+    display: flex;
+    height: 80vh;
+    position: absolute;
+    top: 297.8vw;
+    width: 100vw;
+}
+    .back2inside{
+        /* outline: 1px solid red; */
+        display: flex;
+        width: 96vw;
+        position: absolute;
+        height: 49.3255vh;
+         height: 49.3255vh;
+         top: 6vh;
+         margin-left:  1vh;
+         margin-right: 1vh;
+    }
+    .back2deskcrip{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        left: 40vw;
+    }
+    .back3deskcrip{
+        width: 99.2vw;
+        width: 99.2vw;
+        position: absolute;
+        top: -14vw;
+    }
+    
+    .back2deskcrip h2 {
+        font-size: 7vw;
+        width: 64vw;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        left: -24vw;
+    }
+
+    .back2deskcrip p {
+        font-size: 4.6vw;
+    width: 83vw;
+    position: absolute;
+    left: -33vw;
+    top: 16vw;
+    }
+    .back2inside img{
+        position: absolute;
+        width: 99vw;
+        left: -41vw;
+        top: 46vw;
+    }
+    .back3inside{
+        width: 99.4vw;
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 52vh;
+        top: 6vh;
+        margin-left: 0.156vh;
+    }
+    .back3deskcrip h2 {
+        font-size: 32px;
+    }
+
+    .back3deskcrip p {
+        font-size: 18px;
+        font-size: 18px;
+        position: absolute;
+        top: 36vw;
+    }
+
+    /* .back3inside img {
+        width
+    }
+     */
+
+  /* *{
+    outline: 1px solid red !important; 
+     outline: 1px solid red;
+  } */
+    
+}
